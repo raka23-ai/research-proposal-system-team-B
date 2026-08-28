@@ -6,3 +6,6 @@
 ## Version 1.1
 
 - Added login page frame and background.
+## Version 1.2
+
+- Added login page illustration.
