@@ -13,7 +13,7 @@ The login page frame and background have been added.
 The login page now displays an illustration on the left side.
 ## Username and UserID
 
-
-
 The login page now includes Username and UserID input fields.
+## Password Visibility
 
+The login page now includes a password field with a show/hide password option.

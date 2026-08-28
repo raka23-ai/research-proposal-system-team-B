@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoginPage extends JFrame {
 	
@@ -35,31 +37,64 @@ public class LoginPage extends JFrame {
 				"Image not found. Add illustration.png to the project."
 			);
 		}
-	// Username Label
-	JLabel userLabel = new JLabel("Username");
-	userLabel.setFont(labelFont);
-	userLabel.setForeground(textColor);
-	userLabel.setBounds(540, 100, 100, 30);
-	add(userLabel);
+		// Username Label
+		JLabel userLabel = new JLabel("Username");
+		userLabel.setFont(labelFont);
+		userLabel.setForeground(textColor);
+		userLabel.setBounds(540, 100, 100, 30);
+		add(userLabel);
 
-	// Username Field
-	JTextField userField = new JTextField();
-	userField.setBounds(540, 130, 250, 35);
-	userField.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-	add(userField);
+		// Username Field
+		JTextField userField = new JTextField();
+		userField.setBounds(540, 130, 250, 35);
+		userField.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+		add(userField);
 
-	// UserID Label
-	JLabel idLabel = new JLabel("UserID");
-	idLabel.setFont(labelFont);
-	idLabel.setForeground(textColor);
-	idLabel.setBounds(540, 180, 100, 30);
-	add(idLabel);
+		// UserID Label
+		JLabel idLabel = new JLabel("UserID");
+		idLabel.setFont(labelFont);
+		idLabel.setForeground(textColor);
+		idLabel.setBounds(540, 180, 100, 30);
+		add(idLabel);
 
-	// UserID Field
-	JTextField idField = new JTextField();
-	idField.setBounds(540, 210, 250, 35);
-	idField.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-	add(idField);
+		// UserID Field
+		JTextField idField = new JTextField();
+		idField.setBounds(540, 210, 250, 35);
+		idField.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+		add(idField);
+		
+
+		JLabel passLabel = new JLabel("Password");
+		passLabel.setFont(labelFont);
+		passLabel.setForeground(textColor);
+		passLabel.setBounds(540, 260, 100, 30);
+		add(passLabel);
+
+		JPasswordField passField = new JPasswordField();
+		passField.setBounds(540, 290, 250, 35);
+		passField.setBorder(
+			BorderFactory.createEmptyBorder(5, 5, 5, 5)
+		);
+		add(passField);
+
+		JCheckBox showPassBox = new JCheckBox("Show Password");
+		showPassBox.setBounds(660, 260, 130, 30);
+		showPassBox.setBackground(
+			new Color(196, 216, 235)
+		);
+		showPassBox.setForeground(textColor);
+		add(showPassBox);
+
+		// Show / hide password
+		showPassBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (showPassBox.isSelected()) {
+					passField.setEchoChar((char) 0);
+				} else {
+					passField.setEchoChar('•');
+				}
+			}
+		});
 
     }
 

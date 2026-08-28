@@ -12,6 +12,8 @@
 
 * Added login page illustration.
 ## Version 1.3
-* 
-* \- Added Username and UserID input fields.
 
+* Added Username and UserID input fields.
+## Version 1.4
+
+- Added password field and show/hide password functionality.
