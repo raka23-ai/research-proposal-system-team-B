@@ -35,6 +35,31 @@ public class LoginPage extends JFrame {
 				"Image not found. Add illustration.png to the project."
 			);
 		}
+	// Username Label
+	JLabel userLabel = new JLabel("Username");
+	userLabel.setFont(labelFont);
+	userLabel.setForeground(textColor);
+	userLabel.setBounds(540, 100, 100, 30);
+	add(userLabel);
+
+	// Username Field
+	JTextField userField = new JTextField();
+	userField.setBounds(540, 130, 250, 35);
+	userField.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+	add(userField);
+
+	// UserID Label
+	JLabel idLabel = new JLabel("UserID");
+	idLabel.setFont(labelFont);
+	idLabel.setForeground(textColor);
+	idLabel.setBounds(540, 180, 100, 30);
+	add(idLabel);
+
+	// UserID Field
+	JTextField idField = new JTextField();
+	idField.setBounds(540, 210, 250, 35);
+	idField.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+	add(idField);
 
     }
 
