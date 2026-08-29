@@ -17,3 +17,6 @@
 ## Version 1.4
 
 - Added password field and show/hide password functionality.
+## Version 1.5
+
+- Added Faculty, Admin, Student, and Sign Up buttons.

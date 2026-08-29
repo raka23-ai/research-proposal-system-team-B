@@ -17,3 +17,6 @@ The login page now includes Username and UserID input fields.
 ## Password Visibility
 
 The login page now includes a password field with a show/hide password option.
+## Login Action Buttons
+
+The login page now includes Faculty, Admin, Student, and Sign Up buttons.
