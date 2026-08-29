@@ -95,6 +95,23 @@ public class LoginPage extends JFrame {
 				}
 			}
 		});
+		
+
+		JButton btnFaculty = new JButton("Sign In as Faculty");
+		btnFaculty.setBounds(540, 360, 140, 30);
+		add(btnFaculty);
+
+		JButton btnAdmin = new JButton("Sign In as Admin");
+		btnAdmin.setBounds(690, 360, 140, 30);
+		add(btnAdmin);
+
+		JButton btnStudent = new JButton("Sign In as Student");
+		btnStudent.setBounds(590, 400, 150, 30);
+		add(btnStudent);
+
+		JButton btnSignUp = new JButton("Sign up");
+		btnSignUp.setBounds(615, 440, 100, 30);
+		add(btnSignUp);
 
     }
 
